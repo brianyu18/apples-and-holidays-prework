@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       cap_me = alter.capitalize
       first_holder << cap_me
     end
-    puts "#{first_holder.join(" ")}: #{supplies.join(", ")}"
+    puts "  #{first_holder.join(" ")}: #{supplies.join(", ")}"
   end
   end
 end
