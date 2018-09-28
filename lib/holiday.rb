@@ -65,10 +65,10 @@ def all_supplies_in_holidays(holiday_hash)
     holihash.each do |holiday, supplies|
       first_holder = []
       holiday.to_s.split("_").each do |alter|
-      alter.capitalize
-      first_holder << alter
+      cap_me = alter.capitalize
+      first_holder << cap_me
     end
-    puts "    #{first_holder.join(" ")}: #{supplies.join(", ")}"
+    puts "#{first_holder.join(" ")}: #{supplies.join(", ")}"
   end
   end
 end
